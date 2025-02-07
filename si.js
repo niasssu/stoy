@@ -1,30 +1,32 @@
 	// dw much abt this top part, this is just to troll chromium users
-let links = [
-	"https://www.youtube.com/watch?v=BjoLQvj7lAE",	// jaidenanimations pokemon too many types
-	"https://www.youtube.com/watch?v=qF1DTK4U1AM",	// jaidenanimations aroace
-	"https://www.youtube.com/watch?v=51GIxXFKbzk",	// aiobahn internet yamero
-	"https://www.youtube.com/watch?v=Tnw8cRgre7I",	// mafumafu haro- deisutopia
-	"https://www.youtube.com/watch?v=75GL-BYZFfY",	// mafumafu supa nuko ni naritai
-	"https://www.youtube.com/watch?v=KRSzKCFsTVA",	// mafumafu supa nuko ni narenkatta
-	"https://www.youtube.com/watch?v=E286KqzpkKw",	// soramafuurasaka RPG
-	"https://www.youtube.com/watch?v=Soy4jGPHr3g",	// kasane teto spinning and singing a japanese remix of korobeiniki // "tetoris"
-	"https://www.youtube.com/watch?v=vqiULULdvMA",	// wonderful oppurtunity bouken no shou ga kiemashita
-	"https://www.youtube.com/watch?v=1st0XSY0VKQ",	// wonderful oppurtunity rimokon
-	"https://www.youtube.com/watch?v=PZab_uWmiqY",	// ferd myu-jikku izu ha-do
-	"https://www.youtube.com/watch?v=dQw4w9WgXcQ",	// the real rickroll
-	"https://www.youtube.com/watch?v=hlNWfslbSGA",	// nanawoakari gyakusou shoujo
-	"https://www.youtube.com/watch?v=qYAmduGAwBQ",	// wonderful opportunity okochyama sensou
-	"https://www.youtube.com/watch?v=AynqwMwznb4",	// hkmori lost
-	"https://www.youtube.com/watch?v=CjvK6uwv9bI"	// nchproductions shikanokonokonokokoshitantan
+document.title = `he's clueless!`;
+let links = [ // changed some links and removed one.
+	"https://www.youtube.com/watch?v=BjoLQvj7lAE",
+	"https://www.youtube.com/watch?v=qF1DTK4U1AM",
+	"https://www.youtube.com/watch?v=51GIxXFKbzk",
+	"https://www.youtube.com/watch?v=75GL-BYZFfY",
+	"https://www.youtube.com/watch?v=cPJUBQd-PNM",
+	"https://www.youtube.com/watch?v=E286KqzpkKw",
+	"https://www.youtube.com/watch?v=Soy4jGPHr3g",
+	"https://www.youtube.com/watch?v=vqiULULdvMA",
+	"https://www.youtube.com/watch?v=1pDM6fQUfJs",
+	"https://www.youtube.com/watch?v=PZab_uWmiqY",
+	"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+	"https://www.youtube.com/watch?v=hlNWfslbSGA",
+	"https://www.youtube.com/watch?v=qYAmduGAwBQ",
+	"https://www.youtube.com/watch?v=AynqwMwznb4",
+	"https://www.youtube.com/watch?v=CjvK6uwv9bI"
 ];
 
 if (navigator.userAgent.includes('Chrome'))	{
-	
+
+	document.getElementById('stuff').innerHTML = `<p>nope. too much google.</p>`;
 	window.setTimeout(() => {
 		window.location.href = links[Math.floor(Math.random()*links.length)];
 	}, 1000);
 	
-} else	{ links = null;
+} else	{ document.title = `stoy`;
+links = null;
 
 	// here's the actual code:
 const stuff = document.getElementById('stuff');
