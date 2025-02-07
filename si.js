@@ -57,7 +57,7 @@ let ary = [
 	// ary[0]
 	`<p>this shouldn't be possible. contact niassu@protonmail.com to notify them of this error.</p>`,
 	`<p>of course, i'm not making save.visit have a default value of -1. so this array does have to exist in the code.</p>`,
-	`<p>it's inevitable that someone will find this. either by random chance or by looking through this code and editing their localStorage.</p><p>either way, congratulations. <span class="txcyapnk">are you happy?</span></p>`
+	`<p>it's inevitable that someone will find this. either by editing their localStorage or looking through this code.<br>either way, congratulations. are you happy?</p>`
 	],
 	
 	[
@@ -67,7 +67,8 @@ let ary = [
 	`<p class="txSoft">${
 		nara ? `your name's ${save.name}.` : 'you didn\'t provide a name. that\'s fine though, you don\'t need one.'
 	}</p>`,
-	`<p class="txSoft">i'm not sure what to write about.`
+	`<p class="txSoft">i'm not sure what to write about. i made this project mainly because i liked goat.rest and thought "hey that's cool! i wanna learn how to do that!"</p><p class="txSoft">after actually looking through his code though, i just decided to forgo the beautification shenanigans and make something of my own.</p>`,
+	`<p class="txSoft">so yeah, it's pretty boring for now. once i have an idea of what i want, i'll replace this with the start of the story.</p>`
 	]
 ];
 
@@ -78,7 +79,9 @@ if (!ary[save.visit])	{
 
 let index = 0;
 document.body.addEventListener("keydown", () =>	{
-	stuff.innerHTML = ary[save.visit][index] ?? `<p class="txSoft">you've reached the end of ary[${save.visit}].</p>`; 
+	stuff.innerHTML = ary[save.visit][index] ?? `<p class="txSoft">${
+		ary[save.visit + 1] ? `you've reached the end of part ${save.visit}. reload to see the next part.` : "EOF" ;
+	}</p>`;
 	index++;
 });
 }
