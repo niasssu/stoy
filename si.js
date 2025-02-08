@@ -82,8 +82,7 @@ if (!ary[save.visit])	{
 let index = 0;
 document.body.addEventListener("keydown", () =>	{
 	stuff.innerHTML = ary[save.visit][index] ?? `<p class="txSoft">${
-		ary[save.visit + 1] ? `you've reached the end of part ${save.visit}. reload to see the next part.` : `EOF` ;
-	}</p>`;
+	ary[save.visit + 1] ? `you've reached the end of part ${save.visit}. reload to see the next part.` : `EOF`}</p>`;
 	index++;
 });
 }
