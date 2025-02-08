@@ -65,12 +65,12 @@ let ary = [
 	[
 	// ary[1] is the actual beginning.
 	// not sure what to write about...
-	`<p class="txSoft">this is a test.</p>`,
+	`<p class="txSoft">this is just a test for now.</p>`,
 	`<p class="txSoft">${
 		nara ? `your name's ${save.name}.` : 'you didn\'t provide a name. that\'s fine though, you don\'t need one.'
 	}</p>`,
-	`<p class="txSoft">i'm not sure what to write about. i made this project mainly because i liked goat.rest and thought "hey that's cool! i wanna learn how to do that!"</p><p class="txSoft">after actually looking through his code though, i just decided to forgo the beautification shenanigans and make something of my own.</p>`,
-	`<p class="txSoft">so yeah, it's pretty boring for now. once i have an idea of what i want, i'll replace this with the start of the story.</p>`
+	`<p class="txSoft">there's nothing here yet. i don't really know where to begin on this, or even what i want to use it for. it's just here now.</p>`,
+	`<p class="txSoft">when you're done here, you should delete the localStorage "cookie" associated with this webpage. so you can start from the beginning.</p><p class="txSoft">if you don't know how to do that, figure it out.</p>`,
 	]
 ];
 
