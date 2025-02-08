@@ -1,6 +1,6 @@
-/*	// dw much abt this top part, this is just to troll chromium users
+/*	// you're right. i'm sorry. i fixed it (it is now a mulitline comment)
 document.title = `he's clueless!`;
-let links = [ // changed some links and removed one.
+let links = [
 	"https://www.youtube.com/watch?v=BjoLQvj7lAE",
 	"https://www.youtube.com/watch?v=qF1DTK4U1AM",
 	"https://www.youtube.com/watch?v=51GIxXFKbzk",
@@ -70,7 +70,7 @@ let ary = [
 		nara ? `your name's ${save.name}.` : 'you didn\'t provide a name. that\'s fine though, you don\'t need one.'
 	}</p>`,
 	`<p class="txSoft">there's nothing here yet. i don't really know where to begin on this, or even what i want to use it for. it's just here now.</p>`,
-	`<p class="txSoft">when you're done here, you should delete the localStorage "cookie" associated with this webpage. so you can start from the beginning.</p><p class="txSoft">if you don't know how to do that, figure it out.</p>`,
+	`<p class="txSoft">when you're done here, you should delete the localStorage "cookie" associated with this webpage. so you can start from the beginning.</p><p class="txSoft">if you don't know how to do that, figure it out.</p>`
 	]
 ];
 
