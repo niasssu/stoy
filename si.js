@@ -1,4 +1,4 @@
-	// dw much abt this top part, this is just to troll chromium users
+/*	// dw much abt this top part, this is just to troll chromium users
 document.title = `he's clueless!`;
 let links = [ // changed some links and removed one.
 	"https://www.youtube.com/watch?v=BjoLQvj7lAE",
@@ -27,7 +27,7 @@ if (navigator.userAgent.includes('Chrome'))	{
 	
 } else	{ document.title = `stoy`;
 links = null;
-
+*/
 	// here's the actual code:
 const stuff = document.getElementById('stuff');
 
@@ -85,4 +85,4 @@ document.body.addEventListener("keydown", () =>	{
 	ary[save.visit + 1] ? `you've reached the end of part ${save.visit}. reload to see the next part.` : `EOF`}</p>`;
 	index++;
 });
-}
+//}
